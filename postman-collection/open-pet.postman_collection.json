@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "6bf14189-a885-4c0f-b78c-90f6d3c800f5",
+		"name": "open-pet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7307217"
+	},
+	"item": [
+		{
+			"name": "crear usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"prueba3\",\r\n    \"email\": \"prueba3@gmail.com\",\r\n    \"password\": \"pruebaa\",\r\n    \"phone\": \"966358252\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/users",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -33,25 +33,6 @@ export class UsersService {
     }
   }
 
-  async loginUser(email: string, password: string){
-    try {
-      const user = await this.userModel.findOne({email});
-      const isPasswordValid = await bcrypt.compare(password, user.password);
-
-      if( !isPasswordValid ){
-        throw new HttpException('Please check your credentials', HttpStatus.UNAUTHORIZED);
-      }
-
-      if( user && isPasswordValid) {
-        const {email, name } = user;
-        return {email, name}
-      }
-
-    } catch (error) {
-      this.handleExceptions(error);
-    }
-
-  }
 
   findAll() {
     return `This action returns all users`;

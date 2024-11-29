@@ -16,4 +16,7 @@ export class CreateUserDto {
     @IsString()
     readonly phone?: string;
 
+    @IsOptional()
+    readonly pets?: string[];
+
 }

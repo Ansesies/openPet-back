@@ -1,5 +1,6 @@
 import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
-import { Document } from "mongoose";
+import { Document, Types } from "mongoose";
+import { Pet } from "src/pets/entities/pet.entity";
 
 export type UserDocument = User & Document;
 
@@ -17,6 +18,9 @@ export class User {
 
     @Prop()
     phone: string;
+
+    @Prop({ type: [{ type: String, ref: Pet.name }] }) // Referencias a las mascotas
+    pets: string[];
 }
 
 export const UserSchema = SchemaFactory.createForClass(User);

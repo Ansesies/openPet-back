@@ -10,7 +10,7 @@ import { PetsModule } from './pets/pets.module';
   imports: [
     UsersModule, 
     PetsModule,
-    MongooseModule.forRoot('mongodb://localhost:27017/nest-openpet'), AuthModule, PetsModule
+    MongooseModule.forRoot('mongodb+srv://renatotapiaarancibia:YORYjdfbNIbPQZAz@cluster0.zc4q1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'), AuthModule, PetsModule
   
   ],
   controllers: [AppController],

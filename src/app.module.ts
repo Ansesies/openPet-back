@@ -10,7 +10,7 @@ import { PetsModule } from './pets/pets.module';
   imports: [
     UsersModule, 
     PetsModule,
-    MongooseModule.forRoot('mongodb+srv://renatotapiaarancibia:YORYjdfbNIbPQZAz@cluster0.zc4q1.mongodb.net/nest-openpet.nest-openpet?retryWrites=true&w=majority&appName=Cluster0'), AuthModule, PetsModule
+    MongooseModule.forRoot('mongodb+srv://renatotapiaarancibia:YORYjdfbNIbPQZAz@cluster0.zc4q1.mongodb.net/nest-openpet?retryWrites=true&w=majority&appName=Cluster0'), AuthModule, PetsModule
   
   ],
   controllers: [AppController],
